@@ -19,10 +19,12 @@ body{
   max-width: 600px;
   margin-bottom: 50px;
 }
+
 .container{
   max-width: 480px;
   margin-bottom: 24px;
 }
+
 .container span{
   color: #fff;
   font-size: 1.2rem;
@@ -37,6 +39,7 @@ body{
   outline: none;
   margin-top: 10px;
 }
+
 .button{
   height: 40px;
   background-color: #3EB72B;
@@ -48,6 +51,58 @@ body{
   font-weight: bolder;
   font-size: 1.1rem;
 }
-container-password{
-  
+
+.container-password{
+  max-width: 480px;
+  margin: 14px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.title{
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+.password{
+  height: 40px;
+  background-color: rgba(0,0,0, 0.40);
+  color: #FFF;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #313131;
+  transition: transform 0.5s;
+}
+
+.password:hover{
+  transform: scale(1.05);
+}
+
+.tooltip{
+  color:#FFF;
+  position: relative;
+  top: 20px;
+  background-color: rgba(15,15,15);
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.hide{
+  display: none;
+}
+
+.container-password:hover .tooltip{
+  visibility:visible;
+  opacity: 1;
+  bottom: 20px;
 }
